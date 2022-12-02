@@ -25,7 +25,7 @@ foi feito uma refatoração do projeto, de cordo com a minha necessidade !
 ```
 ## Layout
 
-![](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![](img/layout.png)
 
 
 ## Referência

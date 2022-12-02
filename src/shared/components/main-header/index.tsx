@@ -31,7 +31,6 @@ export default function MainHeader() {
       flex flex-col justify-center items-center 
       bg-gray-950`}
     >
-      
       <div className="flex gap-3 items-center">
         <Image
           src={profilePicture}
@@ -49,7 +48,7 @@ export default function MainHeader() {
       </div>
 
       <div className="w-[18rem] lg:w-[20rem] mt-6 lg:mt-12">
-      <Text as="p" variant="sm" className="text-white italic">
+        <Text as="p" variant="sm" className="text-white italic">
         Compartilhando conteúdos utéis de tecnologia.
         </Text>
         <div className="flex gap-1 items-center mt-2">
