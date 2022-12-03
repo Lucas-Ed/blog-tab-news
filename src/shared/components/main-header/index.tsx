@@ -13,7 +13,14 @@ function NavigatorItem({
   return (
     <Link
       href={href}
-      className="py-2 px-3 rounded-lg hover:bg-purple-700 transition duration-200 ease-in-out"
+      className="py-2 px-3
+              text-gray-50
+                 rounded-lg
+                 hover:bg-gray-50
+                  transition duration-200
+                   ease-in-out
+                  bg-purple-600 
+                  "
     >
       <Text variant="sm" className="font-bold">
         {children}
@@ -41,18 +48,18 @@ export default function MainHeader() {
           <Text as="h1" variant="2xl lg:3xl" className="text-purple-600">
           Lucas Eduardo
           </Text>
-          <Text as="div" variant="xs" className="text-white italic -mt-0.5">
+          <Text as="div" variant="xs" className="text-gray-50 italic -mt-0.5">
           lucas-araras@outlook.com
           </Text>
         </div>
       </div>
 
       <div className="w-[18rem] lg:w-[20rem] mt-6 lg:mt-12">
-        <Text as="p" variant="sm" className="text-white italic">
+        <Text as="p" variant="sm" className="text-gray-50 italic">
         Compartilhando conteúdos utéis de tecnologia.
         </Text>
         <div className="flex gap-1 items-center mt-2">
-          <Text variant="sm" className="text-white italic">
+          <Text variant="sm" className="text-gray-50 italic">
           Fique a vontade.
           </Text>
           <span>😎</span>
