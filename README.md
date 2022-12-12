@@ -10,7 +10,7 @@ foi feito uma refatoração do projeto, de cordo com a minha necessidade !
 ## Instalação
 
 - Faça o download do projeto.
-- Instale as dependências
+- Instale as dependências:
 
 ```bash
   npm install
