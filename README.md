@@ -20,6 +20,7 @@ foi feito uma refatoração do projeto, de cordo com a minha necessidade !
   BLOG_PROVIDER_BASE_API=https://www.tabnews.com.br/api/v1
 ```
 - Só por pra rodar o projeto localmente com o comando:
+ 
 ```bash
   npm run dev
 ```
