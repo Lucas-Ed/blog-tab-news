@@ -56,7 +56,7 @@ export default function MainHeader() {
 
       <div className="w-[18rem] lg:w-[20rem] mt-6 lg:mt-12">
         <Text as="p" variant="sm" className="text-gray-50 italic">
-        Compartilhando conteúdos utéis de tecnologia.
+        Compartilhando conteúdos úteis de tecnologia.
         </Text>
         <div className="flex gap-1 items-center mt-2">
           <Text variant="sm" className="text-gray-50 italic">
