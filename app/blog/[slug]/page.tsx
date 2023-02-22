@@ -1,6 +1,6 @@
 import PostDetailComponent from '../../../src/domains/posts/components/post-detail-component';
 import { PostDetail } from '../../../src/domains/posts/models/post-detail';
-import { Text } from 'thon-ui';
+import { Text } from '@thonlabs/ui';
 
 type Props = {
   params: {

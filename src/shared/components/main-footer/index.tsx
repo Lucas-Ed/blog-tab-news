@@ -1,4 +1,4 @@
-import { Text } from 'thon-ui';
+import { Text } from '@thonlabs/ui';
 
 export default function MainFooter() {
   const linkClassName =
@@ -15,7 +15,7 @@ export default function MainFooter() {
       <ul className="flex gap-2.5">
       <li>
           <a
-             href="https://portfolio-lucased.netlify.app"
+            href="https://portfolio-lucased.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -26,7 +26,7 @@ export default function MainFooter() {
         </li>
         <li>
           <a
-             href="https://twitter.com/LucasEdu272"
+            href="https://twitter.com/LucasEdu272"
             target="_blank"
             rel="noopener noreferrer"
           >
