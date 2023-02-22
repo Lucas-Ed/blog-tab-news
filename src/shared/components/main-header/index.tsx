@@ -15,11 +15,11 @@ function NavigatorItem({
       href={href}
       className="py-2 px-3
               text-gray-50
-                 rounded-lg
-                 hover:bg-gray-50
-                  transition duration-200
-                   ease-in-out
-                  bg-purple-600 
+              rounded-lg
+              hover:bg-gray-50
+              transition duration-200
+              ease-in-out
+              bg-purple-600 
                   "
     >
       <Text variant="sm" className="font-bold">
