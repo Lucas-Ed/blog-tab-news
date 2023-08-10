@@ -1,4 +1,4 @@
-import { Text } from '@thonlabs/ui';
+import { Text } from 'thon-ui';
 
 export default function MainFooter() {
   const linkClassName =
@@ -26,12 +26,12 @@ export default function MainFooter() {
         </li>
         <li>
           <a
-            href="https://twitter.com/LucasEdu272"
+            href="https://bit.ly/3DS2f1C"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Text variant="xs" className={linkClassName}>
-              Twitter
+              Nostr
             </Text>
           </a>
         </li>

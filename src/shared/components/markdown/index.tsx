@@ -1,4 +1,4 @@
-import { RenderMarkdown } from '@thonlabs/ui';
+import { RenderMarkdown } from 'thon-ui';
 import './markdown.css';
 
 type Props = {

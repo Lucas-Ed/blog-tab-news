@@ -1,4 +1,4 @@
-import { Text } from '@thonlabs/ui';
+import { Text } from 'thon-ui';
 import Markdown from '../../../../shared/components/markdown';
 import { format } from 'date-fns';
 import { PostDetail } from '../../models/post-detail';

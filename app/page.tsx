@@ -1,4 +1,4 @@
-import { Text } from '@thonlabs/ui';
+import { Text } from 'thon-ui';
 import { Post } from '../src/domains/posts/models/post';
 import { format } from 'date-fns';
 import Markdown from '../src/shared/components/markdown';
@@ -7,7 +7,8 @@ import { PostDetail } from '../src/domains/posts/models/post-detail';
 
 async function getLastPost() {
   const postsResponse = await fetch(
-    `${process.env.BLOG_PROVIDER_BASE_API}/contents/LucasEd`
+    `${process.env.BLOG_PROVIDER_BASE_API}/contents/lucased`,
+    { next: { revalidate: 30 } }
   );
   let posts = (await postsResponse.json()) as Post[];
 
@@ -26,7 +27,7 @@ async function getLastPost() {
   const [lastPostFromList] = posts;
 
   const lastPostResponse = await fetch(
-    `${process.env.BLOG_PROVIDER_BASE_API}/contents/LucasEd/${lastPostFromList.slug}`
+    `${process.env.BLOG_PROVIDER_BASE_API}/contents/lucased/${lastPostFromList.slug}`
   );
   const lastPost = (await lastPostResponse.json()) as PostDetail;
 
@@ -45,7 +46,7 @@ export default async function Home() {
   }
 
   return (
-    <article className="w-full lg:w-[40rem]">
+    <article className="w-full lg:w-[50rem]">
       <Text variant="sm" className="text-gray-500">
         {format(lastPost?.created_at, 'dd.MM.yyyy')} - Última Postagem...
       </Text>

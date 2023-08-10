@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Text } from '@thonlabs/ui';
+import { Text } from 'thon-ui';
 import profilePicture from './assets/avatar2s-profile-picture.png';
 
 function NavigatorItem({
@@ -13,14 +13,7 @@ function NavigatorItem({
   return (
     <Link
       href={href}
-      className="py-2 px-3
-              text-gray-50
-                rounded-lg
-              hover:bg-gray-50
-              transition duration-200
-              ease-in-out
-              bg-purple-600 
-                  "
+      className="py-2 px-3 rounded-lg hover:bg-gray-50 transition duration-200 ease-in-out bg-purple-600 "
     >
       <Text variant="sm" className="font-bold">
         {children}

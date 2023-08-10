@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Text } from '@thonlabs/ui';
+import { Text } from 'thon-ui';
 import classNames from 'classnames';
 import { format } from 'date-fns';
 import { Post } from '../../models/post';

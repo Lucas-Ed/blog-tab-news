@@ -1,10 +1,11 @@
-import { Text } from '@thonlabs/ui';
+import { Text } from 'thon-ui';
 import PostsListItem from '../../src/domains/posts/components/posts-list-item';
 import { Post } from '../../src/domains/posts/models/post';
 
 async function fetchPosts() {
   const postsResponse = await fetch(
-    `${process.env.BLOG_PROVIDER_BASE_API}/contents/LucasEd`
+    `${process.env.BLOG_PROVIDER_BASE_API}/contents/lucased`,
+    { next: { revalidate: 30 } }
   );
   let posts = (await postsResponse.json()) as Post[];
 

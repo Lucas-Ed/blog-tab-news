@@ -1,6 +1,7 @@
 import PostDetailComponent from '../../../src/domains/posts/components/post-detail-component';
 import { PostDetail } from '../../../src/domains/posts/models/post-detail';
-import { Text } from '@thonlabs/ui';
+import { Text } from 'thon-ui';
+import { Post } from '../../../src/domains/posts/models/post';
 
 type Props = {
   params: {
@@ -8,9 +9,24 @@ type Props = {
   };
 };
 
+export async function generateStaticParams() {
+  const postsResponse = await fetch(
+    `${process.env.BLOG_PROVIDER_BASE_API}/contents/lucased`,
+    { next: { revalidate: 30 } }
+  );
+  let posts = (await postsResponse.json()) as Post[];
+
+  const postsSlugs = posts
+    .filter((post) => !post['parent_id'])
+    .map((post) => ({ slug: post.slug }));
+
+  return postsSlugs;
+}
+
 async function getPost(slug: string) {
   const postResponse = await fetch(
-    `${process.env.BLOG_PROVIDER_BASE_API}/contents/LucasEd/${slug}`
+    `${process.env.BLOG_PROVIDER_BASE_API}/contents/lucased/${slug}`,
+    { next: { revalidate: 30 } }
   );
   const post = (await postResponse.json()) as PostDetail;
 
