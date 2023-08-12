@@ -24,6 +24,18 @@ async function getLastPost() {
     (a, b) =>
       (b.created_at as unknown as number) - (a.created_at as unknown as number)
   );
+
+  // let posts = (await postsResponse.json());
+  // if (Array.isArray(posts)){
+  //   posts = posts
+  //   .filter((post) => !post['parent_id'])
+  //   .map((post) => ({
+  //     ...post,
+  //     created_at: new Date(post.created_at),
+  //   }));
+  //   posts.sort(
+  //     (a, b) =>
+  //       (b.created_at as unknown as number) - (a.created_at as unknown as number)
   const [lastPostFromList] = posts;
 
   const lastPostResponse = await fetch(
