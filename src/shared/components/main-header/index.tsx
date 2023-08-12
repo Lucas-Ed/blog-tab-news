@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Text } from 'thon-ui';
+import { Text } from '@thonlabs/ui';
 import profilePicture from './assets/avatar2s-profile-picture.png';
 
 function NavigatorItem({

@@ -1,4 +1,4 @@
-const { thonUI, thonUIContent } = require('thon-ui/plugin');
+const { thonUI, thonUIContent } = require('@thonlabs/ui/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

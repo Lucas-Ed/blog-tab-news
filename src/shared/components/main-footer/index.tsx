@@ -1,4 +1,4 @@
-import { Text } from 'thon-ui';
+import { Text } from'@thonlabs/ui';
 
 export default function MainFooter() {
   const linkClassName =
