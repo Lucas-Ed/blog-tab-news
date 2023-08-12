@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 
 import React from 'react';
-import 'thon-ui/core/base.css';
+import '@thonlabs/ui/core/base.css';
 import '../src/shared/css/globals.css';
 import '../src/homepage/css/homepage.css';
 import MainFooter from '../src/shared/components/main-footer';
