@@ -11,22 +11,19 @@ async function getLastPost() {
     { next: { revalidate: 30 } }
   );
 
-  let posts = (await postsResponse.json());
-  if (Array.isArray(posts)){
-    posts = posts
+  let posts = (await postsResponse.json()) as Post[];
+
+  posts = posts
     .filter((post) => !post['parent_id'])
     .map((post) => ({
       ...post,
       created_at: new Date(post.created_at),
     }));
-    posts.sort(
-      (a, b) =>
-        (b.created_at as unknown as number) - (a.created_at as unknown as number)
-    );
-  }else{posts = []}
 
-
-
+  posts.sort(
+    (a, b) =>
+      (b.created_at as unknown as number) - (a.created_at as unknown as number)
+  );
   const [lastPostFromList] = posts;
 
   const lastPostResponse = await fetch(
