@@ -18,5 +18,6 @@ module.exports = {
       },
     },
   },
+  jit: true,
   plugins: [thonUI()],
 };
