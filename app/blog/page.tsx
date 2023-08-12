@@ -1,4 +1,4 @@
-import { Text } from 'thon-ui';
+import { Text } from '@thonlabs/ui';
 import PostsListItem from '../../src/domains/posts/components/posts-list-item';
 import { Post } from '../../src/domains/posts/models/post';
 
