@@ -1,5 +1,6 @@
 const { thonUI, thonUIContent } = require('@thonlabs/ui/plugin');
 
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['app/**/*.tsx', 'src/**/*.tsx', thonUIContent()],
@@ -18,6 +19,5 @@ module.exports = {
       },
     },
   },
-  jit: true,
   plugins: [thonUI()],
 };
