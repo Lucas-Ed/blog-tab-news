@@ -42,7 +42,7 @@ foi feito uma refatoração do projeto, de cordo com a minha necessidade !
 
 
 ## Demonstração
- [Acesse aqui.](https://blog-tab-news-lucas-ed.vercel.app)
+ [Acesse aqui.](https://bit.ly/47reCiX)
 
 
 
