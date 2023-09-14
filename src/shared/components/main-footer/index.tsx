@@ -15,7 +15,7 @@ export default function MainFooter() {
       <ul className="flex gap-2.5">
       <li>
           <a
-            href="https://portfolio-lucased.netlify.app"
+            href="https://portifolio-7a8a2c.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
           >
